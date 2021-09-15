@@ -1,8 +1,19 @@
 import PokemonItem from "../../components/PokemonItem";
+import PokemonLogo from "../../assets/images/logo.png";
+import styles from './styles.module.css'
 
 function Home() {
   return (
-    <PokemonItem name="Pikachuli" children={<h1>Titulo 2</h1>}/>
+    <div className={styles.container}>
+      <img src={PokemonLogo} alt="" />
+      <PokemonItem name="Pikachuli"/>
+      <PokemonItem name="Pikaci"/>
+      <PokemonItem name="Pikachurekjrli"/>
+      <PokemonItem name="Pikacwwhuli"/>
+      <PokemonItem name="Pikachulierrrrr"/>
+      <PokemonItem name="rrrPikachulierrrrr"/>
+      <PokemonItem name="rrrsasalkPikachulierrrrr"/>
+    </div>
   );
 }
 
