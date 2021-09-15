@@ -1,7 +1,11 @@
-function PokemonItem() {
+interface IProps {
+  name: string
+}
+
+const PokemonItem: React.FC<IProps> = ({ name }) =>{
   return (
     <div>
-      <h2>Nome do Pokemon</h2>
+      <h2>{name}</h2>
     </div>
   )
 }

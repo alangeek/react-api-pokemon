@@ -2,7 +2,7 @@ import PokemonItem from "../components/PokemonItem";
 
 function App() {
   return (
-    <PokemonItem />
+    <PokemonItem name="Pikachuli"/>
   );
 }
 
