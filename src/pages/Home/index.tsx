@@ -30,13 +30,14 @@ function Home() {
   
   return (
     <div className={styles.container}>
-      <img src={PokemonLogo} alt="" />
-      <PokemonItem name="Pikachuli"/>
-      <PokemonItem name="Pikaci"/>
-      <PokemonItem name="Pikachurekjrli"/>
-      <PokemonItem name="Pikacwwhuli"/>
-      <PokemonItem name="Pikachulierrr"/>
-      <PokemonItem name="rrrPikierrrrr"/>
+      <img 
+        src={PokemonLogo} 
+        alt="Pokemon Logo"
+        onClick={() => getAllPokemons()}
+      />
+      {pokemons?.map((pokemon) => (
+        <PokemonItem name={pokemon.name} key={pokemon.name}/>
+      ))}
     </div>
   );
 }
