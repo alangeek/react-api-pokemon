@@ -1,3 +1,4 @@
+import { useState } from "react";
 
 import PokemonItem from "../../components/PokemonItem";
 import PokemonLogo from "../../assets/images/logo1.png";
@@ -6,9 +7,12 @@ import api from "../../services/api";
 // import api from "../../services/api";
 
 function Home() {
+  const [pokemons, setPokemons] = useState()
+  
   const getAllPokemons = async () => {
-    const pokemons = await api.get('pokemon')
-    return pokemons
+    const { data } = await api.get('pokemon')
+    
+    setPokemons(data)
   }
   
   return (
