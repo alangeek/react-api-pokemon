@@ -1,6 +1,8 @@
+
 import PokemonItem from "../../components/PokemonItem";
-import PokemonLogo from "../../assets/images/logo.png";
+import PokemonLogo from "../../assets/images/logo1.png";
 import styles from './styles.module.css'
+// import api from "../../services/api";
 
 function Home() {
   return (
@@ -10,9 +12,8 @@ function Home() {
       <PokemonItem name="Pikaci"/>
       <PokemonItem name="Pikachurekjrli"/>
       <PokemonItem name="Pikacwwhuli"/>
-      <PokemonItem name="Pikachulierrrrr"/>
-      <PokemonItem name="rrrPikachulierrrrr"/>
-      <PokemonItem name="rrrsasalkPikachulierrrrr"/>
+      <PokemonItem name="Pikachulierrr"/>
+      <PokemonItem name="rrrPikierrrrr"/>
     </div>
   );
 }

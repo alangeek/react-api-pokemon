@@ -126,6 +126,12 @@ table {
 
 /* GENERAL GENERAL */
 html {
-  background-color: red;
+  background: rgb(255, 17, 61);
+  background: linear-gradient(
+    90deg,
+    rgba(255, 17, 61, 1) 0%,
+    rgba(255, 21, 85, 0.6923144257703081) 35%,
+    rgba(255, 209, 0, 1) 100%
+  );
   font-family: 'Ubuntu', sans-serif;
 }
