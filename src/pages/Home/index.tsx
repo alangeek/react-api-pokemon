@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import {Link } from 'react-router-dom'
 
 import PokemonItem from "../../components/PokemonItem";
 import PokemonLogo from "../../assets/images/logo1.png";
@@ -37,7 +38,9 @@ function Home() {
         alt="Pokemon Logo"
       />
       {pokemons ? pokemons.map((pokemon) => (
-        <PokemonItem name={pokemon.name} key={pokemon.name}/>
+        <Link to={`/${pokemon.name}`} key={pokemon.name}>
+          <PokemonItem name={pokemon.name} />
+        </Link>
       )): (
         <h1 className={styles.loading}>Carregadando...</h1>
       )}

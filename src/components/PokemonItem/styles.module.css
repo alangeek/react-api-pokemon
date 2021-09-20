@@ -1,5 +1,5 @@
 .background {
-  margin: 0 auto;
+  margin: 20px auto;
   /* background: #fa005a; */
   background: #f2d184;
   color: #444;
@@ -9,10 +9,6 @@
   padding-top: 10px;
   padding-bottom: 10px;
   cursor: pointer;
-}
-
-.background + .background {
-  margin-top: 20px;
 }
 
 .name {
